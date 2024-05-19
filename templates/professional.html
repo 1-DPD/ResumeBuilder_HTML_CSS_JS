@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Template</title>
+    <link rel="stylesheet" href="../assets/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            color: #808080; /* silver color */
+            background-color: #ffffff;
+        }
+
+        .container1 {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #808080; /* silver color */
+            text-align: center;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            color: #808080; /* silver color */
+            /* text-align: center; */
+            padding-bottom: 5px;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        /* Flexbox for side-by-side elements */
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        /* Style for individual flex items */
+        .flex-item {
+            width: 49%;
+        }
+    </style>
+
+</head>
+<body>
+<div class="container1">
+    <h2>{{name}}</h2>
+    <div class="flex-container">
+        <div class="flex-item">
+            <div class="section">
+                <h3>Email</h3>
+                <p>{{email}}</p>
+            </div>
+        </div>
+        <div class="flex-item">
+            <div class="section">
+                <h3>Phone</h3>
+                <p>{{phone}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <h3>Summary</h3>
+        <p>{{summary}}</p>
+    </div>
+    <div class="flex-container">
+        <div class="flex-item">
+            <div class="section">
+                <h3>Work Experience</h3>
+                <p>{{experience}}</p>
+            </div>
+        </div>
+        <div class="flex-item">
+            <div class="section">
+                <h3>Projects</h3>
+                <p>{{projects}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <h3>Education</h3>
+        <p>{{education}}</p>
+    </div>
+    <div class="section">
+        <h3>Achivement</h3>
+        <p>{{achivements}}</p>
+    </div>
+    <div class="flex-container">
+        <div class="flex-item">
+            <div class="section">
+                <h3>Skills</h3>
+                <ul>
+                    <li>{{skills}}</li>
+                </ul>
+            </div>
+        </div>
+        <div class="flex-item">
+            <div class="section">
+                <h3>Languages</h3>
+                <p>{{languages}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <h3>Certifications</h3>
+        <p>{{certifications}}</p>
+    </div>
+</div>
+</body>
+</html>

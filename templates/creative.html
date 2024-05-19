@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Template</title>
+    <link rel="stylesheet" href="../assets/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        body {
+            font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+            color: #333;
+            /* background-color: #fffbdd; */
+        }
+
+        .container2 {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #f1c40f;
+            border-radius: 5px;
+            background-color: #fef3bd;
+        }
+
+        h2 {
+            color: #f39c12;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #f1c40f;
+            border-radius: 5px;
+            background-color: #fff9c4;
+        }
+
+        h3 {
+            color: #d35400;
+            border-bottom: 2px solid #f39c12;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .column {
+            flex: 45%;
+        }
+
+        @media (max-width: 600px) {
+            .row {
+                flex-direction: column;
+            }
+            .column {
+                flex: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container2">
+        <h2>{{name}}</h2>
+        <div class="row">
+            <div class="column">
+                <div class="section">
+                    <h3>Email</h3>
+                    <p>{{email}}</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="section">
+                    <h3>Phone</h3>
+                    <p>{{phone}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h3>Work Experience</h3>
+            <p>{{experience}}</p>
+        </div>
+        <div class="section">
+            <h3>Projects</h3>
+            <p>{{projects}}</p>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div class="section">
+                    <h3>Skills</h3>
+                    <ul>
+                        <li>{{skills}}</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="column">
+                <div class="section">
+                    <h3>Education</h3>
+                    <p>{{education}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Template</title>
+    <link rel="stylesheet" href="../assets/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            color: #555;
+        }
+
+        h2 {
+            color: #28a745;
+            text-align: center; /* Center-align the name */
+        }
+
+        h3 {
+            border-bottom: 2px solid #28a745;
+            padding-bottom: 5px;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>{{name}}</h2>
+        <div class="contact-info">
+            <p>Email: {{email}}</p>
+            <p>Phone: {{phone}}</p>
+        </div>
+        <h3>Education</h3>
+        <p>{{education}}</p>
+        <h3>Work Experience</h3>
+        <p>{{experience}}</p>
+        <h3>Achivement</h3>
+        <p>{{achivements}}</p>
+        <h3>Languages</h3>
+        <p>{{languages}}</p>
+        <h3>Skills</h3>
+        <p>{{skills}}</p>
+    </div>
+</body>
+</html>

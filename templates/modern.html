@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Template</title>
+    <link rel="stylesheet" href="../assets/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            /* color: #444; */
+        }
+
+        .container1 {
+            max-width: 2000px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        h2 {
+            color: #dc3545;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+
+        h3 {
+            border-bottom: 2px solid #dc3545;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <h2>{{name}}</h2>
+        <div class="section">
+            <h3>Email</h3>
+            <p>{{email}}</p>
+        </div>
+        <div class="section">
+            <h3>Phone</h3>
+            <p>{{phone}}</p>
+        </div>
+        <div class="section">
+            <h3>Education</h3>
+            <p>{{education}}</p>
+        </div>
+        <div class="section">
+            <h3>Work Experience</h3>
+            <p>{{experience}}</p>
+        </div>
+        <div class="section">
+            <h3>Projects</h3>
+            <p>{{projects}}</p>
+        </div>
+        <div class="section">
+            <h3>Skills</h3>
+            <ul>
+                <li>{{skills}}</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

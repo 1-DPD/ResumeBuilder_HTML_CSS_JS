@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Default Template</title>
+    <link rel="stylesheet" href="../assets/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        h2 {
+            font-size: 24px; /* Reduce font size for the name */
+        }
+
+        h3 {
+            font-size: 18px; /* Reduce font size for section headers */
+            border-bottom: 2px solid #000;
+            padding-bottom: 5px;
+            margin-top: 20px; /* Add margin to top of sections */
+        }
+
+        p {
+            margin-bottom: 5px; /* Reduce margin bottom for paragraphs */
+            line-height: 1.5; /* Increase line height for better readability */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>{{name}}</h2>
+        <p>Email: {{email}}</p>
+        <p>Phone: {{phone}}</p>
+        <h3>Education</h3>
+        <p>{{education}}</p>
+        <h3>Work Experience</h3>
+        <p>{{experience}}</p>
+        <h3>Projects</h3>
+        <p>{{projects}}</p>
+        <h3>Skills</h3>
+        <p>{{skills}}</p>
+        <h3>Certifications</h3>
+        <p>{{certifications}}</p>
+        
+
+    </div>
+</body>
+</html>
